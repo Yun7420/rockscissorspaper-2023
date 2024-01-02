@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 // 컴포넌트
 import Score from "./components/Score";
@@ -17,19 +17,19 @@ import Paper from "../src/image/paper.png"
 import { Item, ItemValue } from "./model/item";
 
 const item: Item = {
-  바위: {
+  Rock: {
     name: "바위",
     src: Rock,
     alt: "바위 이미지",
   },
 
-  가위: {
+  Scissors: {
     name: "가위",
     src: Scissors,
     alt: "가위 이미지",
   },
 
-  보: {
+  Paper: {
     name: "보",
     src: Paper,
     alt: "보 이미지",
@@ -60,12 +60,12 @@ function App() {
     userScore: number;
     computerScore: number;
   }>(
-    !JSON.parse(localStorage.getItem("score") || "{}")
+    !JSON.parse(localStorage.getItem("score") as string)
       ? {
           userScore: 0,
           computerScore: 0,
         }
-      : JSON.parse(localStorage.getItem("score") || "{}")
+      : JSON.parse(localStorage.getItem("score") as string)
   );
 
   // 유저 아이템 선택 시작
@@ -160,8 +160,10 @@ function App() {
   };
 
   // 로커스토리지 점수 저장
-  localStorage.setItem("score", JSON.stringify(score));
-
+  useEffect(() => {
+    localStorage.setItem("score", JSON.stringify(score));
+  })
+  
   return (
     <div className="App">
       <div className="box">

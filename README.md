@@ -21,7 +21,7 @@ Javascript, Typescript, React, Css를 활용하여 만든 가위바위보(RockSc
 - src/model/item.ts에 아이템 타입을 타입 별칭과 인덱스 시그니처 문법을 통해서 정의 후 import
 - 변수의 타입, 객체의 타입, 함수 타입을 정해주고 문법 오류 수정
 - 리액트에서 제공하는 useState Hook의 초기값을 정하고 타입 추론 후 제네릭 문법을 통해 추가로 들어갈 타입과 초기타입을 반영
-- 로컬스토리지 string | null 타입 오류는 빈 객체라도 가져온다는 의미로 JSON.parse(localStorage.getItem("score") || "{}") 값으로 설정
+- 로컬스토리지 string | null 타입 오류는 string타입만 가져올 수 있도록 타입 단언 문법을 사용하여 JSON.parse(localStorage.getItem("score") as string) 값으로 설정
 - 각 컴포넌트에 props타입을 interface문법으로 정해주고 타입 설정 (setState타입, 유니온타입 등...)
 
 4. 리액트 활용
@@ -68,8 +68,10 @@ Javascript, Typescript, React, Css를 활용하여 만든 가위바위보(RockSc
    https://til.b41.kr/posts/TIL-react-setState-type-220715/
 6. 리액트 이미지파일은 어디서 관리하는게 좋을까 public 혹은 src </br>
    https://velog.io/@rimo09/React-Create-react-app-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EA%B2%BD%EB%A1%9C%EB%A5%BC-%EC%84%A4%EC%A0%95%ED%95%98%EB%8A%94-4%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95
-7. 인프런 강사님과 질의 응답 </br>
+7. 인프런 강사님과 질의 응답1 </br>
    https://www.inflearn.com/questions/1117907/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A1%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A7%8C%EB%93%A4%EB%A9%B4%EC%84%9C-%EA%B6%81%EA%B8%88%ED%95%9C-%EC%82%AC%ED%95%AD%EC%9D%B4-%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%8C%8C%EC%9D%BC-import-%ED%83%80%EC%9E%85-%EC%B6%94%EB%A1%A0-%EC%96%B4%EB%94%94%EA%B9%8C%EC%A7%80
+8. 인프런 강사님과 질의 응답2 </br>
+   https://www.inflearn.com/questions/1119493/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%A1%9C%EC%BB%AC%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%82%AC%EC%9A%A9-%EC%A7%88%EB%AC%B8
 
 ## 프로젝트를 통해 배운 내용
 
@@ -153,12 +155,12 @@ Javascript, Typescript, React, Css를 활용하여 만든 가위바위보(RockSc
     userScore: number;
     computerScore: number;
   }>(
-    !JSON.parse(localStorage.getItem("score") || "{}")
+    !JSON.parse(localStorage.getItem("score") as string)
       ? {
           userScore: 0,
           computerScore: 0,
         }
-      : JSON.parse(localStorage.getItem("score") || "{}")
+      : JSON.parse(localStorage.getItem("score") as string)
   );
 ```
 
@@ -223,5 +225,4 @@ Javascript, Typescript, React, Css를 활용하여 만든 가위바위보(RockSc
 타입스크립트를 처음으로 사용하기 위해 한입타입스크립트 강의를 3주동안 들었고 이론을 바탕으로 리액트에 적용해보니 상당히 오래걸리고 어려웠습니다.
 타입스크립트의 이미지 폴더 경로 문제, State Hook의 제네릭 타입, 로컬스토리지 string | null 타입 오류, props타입의 null타입 좁히기, props타입의 setState타입 설정,
 리액트의 useState의 객체화 등 알아보고 적용하는데 많은 시간이 걸렸지만 그만큼 얻어가는것도 많은 좋은 시간이였습니다.
-현재는 타입에 적응하고 싶어 모든 곳에 타입을 정하는 식이지만 후에 타입 추론을 잘 활용하여 필요한 곳에만 넣을 수 있는 실력이 되면 좋겠습니다.
 현재는 타입에 적응하고 싶어 모든 곳에 타입을 정하는 식이지만 후에 타입 추론을 잘 활용하여 필요한 곳에만 넣을 수 있는 실력이 되면 좋겠습니다.

@@ -12,22 +12,22 @@ interface Props {
 const Button = (props: Props) => {
   return (
     <div className="buttonList">
-      <button onClick={() => props.userPlayStart("바위")}>
+      <button onClick={() => props.userPlayStart("Rock")}>
         <img
-          src={props.item["바위"].src}
-          alt={props.item["바위"].alt}
+          src={props.item["Rock"].src}
+          alt={props.item["Rock"].alt}
         />
       </button>
-      <button onClick={() => props.userPlayStart("가위")}>
+      <button onClick={() => props.userPlayStart("Scissors")}>
         <img
-          src={props.item["가위"].src}
-          alt={props.item["가위"].alt}
+          src={props.item["Scissors"].src}
+          alt={props.item["Scissors"].alt}
         />
       </button>
-      <button onClick={() => props.userPlayStart("보")}>
+      <button onClick={() => props.userPlayStart("Paper")}>
         <img
-          src={props.item["보"].src}
-          alt={props.item["보"].alt}
+          src={props.item["Paper"].src}
+          alt={props.item["Paper"].alt}
         />
       </button>
     </div>
