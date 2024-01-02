@@ -145,16 +145,19 @@ button {
 
 /* 반응형 */
 @media only screen and (max-width: 600px) {
+  /* App box Css Style */
   .box {
     width: 90%;
   }
 }
 
 @media only screen and (max-width: 450px) {
+  /* App box Css Style */
   .box {
     height: calc(100vh - 8rem)
   }
 
+  /* Main Css Style */
   .main h2 {
     font-size: 1.2rem;
   }
@@ -166,10 +169,12 @@ button {
 }
 
 @media only screen and (max-width: 400px) {
+  /* App box Css Style */
   .box {
     height: calc(100vh - 10rem)
   }
 
+  /* Main Css Style */
   .main h2 {
     font-size: 1.1rem;
   }
@@ -179,6 +184,7 @@ button {
     height: 90px;
   }
 
+  /* Button Css Style */
   .buttonList button{
     width: 70px;
     height: 70px;
@@ -191,10 +197,12 @@ button {
 }
 
 @media only screen and (max-width: 350px) {
+  /* App box Css Style */
   .box {
     height: calc(100vh - 12rem)
   }
 
+  /* Main Css Style */
   .main h2 {
     font-size: 1rem;
   }
@@ -206,6 +214,7 @@ button {
 }
 
 @media only screen and (max-width: 300px) {
+  /* Main Css Style */
   .main h2 {
     font-size: 0.9rem;
   }
@@ -215,6 +224,7 @@ button {
     height: 70px;
   }
 
+  /* Button Css Style */
   .buttonList {
     gap: 0.5rem;
   }

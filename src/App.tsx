@@ -159,7 +159,7 @@ function App() {
     }
   };
 
-  // 로커스토리지 점수 저장
+  // 로컬스토리지 점수 저장
   useEffect(() => {
     localStorage.setItem("score", JSON.stringify(score));
   })
