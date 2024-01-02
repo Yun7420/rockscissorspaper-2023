@@ -66,11 +66,11 @@ Javascript, Typescript, React, Css를 활용하여 만든 가위바위보(RockSc
    https://www.yongdam.sh/blog/effective-typescript-narrowing
 5. 타입스크립트 props setState 타입 정의 </br>
    https://til.b41.kr/posts/TIL-react-setState-type-220715/
-6. 리액트 이미지파일은 어디서 관리하는게 좋을까 public 혹은 src </br>
+6. public 혹은 src 리액트 이미지파일은 어디서 관리하는게 좋을까? </br>
    https://velog.io/@rimo09/React-Create-react-app-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EA%B2%BD%EB%A1%9C%EB%A5%BC-%EC%84%A4%EC%A0%95%ED%95%98%EB%8A%94-4%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95
-7. 인프런 강사님과 질의 응답1 </br>
+7. 타입스크립트 인프런 강사님과 질의 응답1 </br>
    https://www.inflearn.com/questions/1117907/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A1%9C-%EB%A6%AC%EC%95%A1%ED%8A%B8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EB%A7%8C%EB%93%A4%EB%A9%B4%EC%84%9C-%EA%B6%81%EA%B8%88%ED%95%9C-%EC%82%AC%ED%95%AD%EC%9D%B4-%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4-%EC%9D%B4%EB%AF%B8%EC%A7%80-%ED%8C%8C%EC%9D%BC-import-%ED%83%80%EC%9E%85-%EC%B6%94%EB%A1%A0-%EC%96%B4%EB%94%94%EA%B9%8C%EC%A7%80
-8. 인프런 강사님과 질의 응답2 </br>
+8. 타입스크립트 인프런 강사님과 질의 응답2 </br>
    https://www.inflearn.com/questions/1119493/%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%A1%9C%EC%BB%AC%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-%EC%82%AC%EC%9A%A9-%EC%A7%88%EB%AC%B8
 
 ## 프로젝트를 통해 배운 내용
@@ -147,7 +147,7 @@ Javascript, Typescript, React, Css를 활용하여 만든 가위바위보(RockSc
   });
 ```
 
-3. 로컬스토리지 string | null 오류
+3. 로컬스토리지 string | null 오류 해결
 
 ```
   // 점수
