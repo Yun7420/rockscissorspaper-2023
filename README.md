@@ -38,7 +38,7 @@ Javascript, Typescript, React, Css를 활용하여 만든 가위바위보(RockSc
 
 ## 완성작 미리보기
 
-미리보기 :
+미리보기 : https://yun7420.github.io/rockscissorspaper-2023/
 
 ## 사용스택
 
