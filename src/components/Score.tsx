@@ -8,6 +8,7 @@ interface Props {
 }
 
 const Score = (props: Props) => {
+  // 점수 Reset 기능
   const resetScore = () => {
     props.setScore({ userScore: 0, computerScore: 0 });
   };

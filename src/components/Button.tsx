@@ -1,7 +1,6 @@
 import React from "react";
-
-// 타입
-import { Item } from "../model/item";
+// Types
+import { Item } from "../types/Item";
 
 interface Props {
   item: Item;

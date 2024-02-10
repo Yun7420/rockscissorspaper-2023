@@ -37,9 +37,9 @@ button {
 
   width: 500px;
   height: calc(100vh - 5rem);
-  background-color: #fff;
+  background-color: white;
   border-radius: 1rem;
-  box-shadow: 2px 2px 10px #930047;
+  box-shadow: 1px 1px 10px black;
 }
 
 /* Score Css Style */
@@ -90,17 +90,9 @@ button {
   border-right: 1px solid #ccc;
 }
 
-.main h2 {
-  font-size: 1.5rem;
-}
-
 .main img {
   width: 120px;
   height: 120px;
-}
-
-.main p {
-  font-weight: bolder;
 }
 
 .main .Win {
@@ -148,58 +140,14 @@ button {
   /* App box Css Style */
   .box {
     width: 90%;
+    height: calc(100vh - 8rem)
   }
 }
 
 @media only screen and (max-width: 450px) {
   /* App box Css Style */
   .box {
-    height: calc(100vh - 8rem)
-  }
-
-  /* Main Css Style */
-  .main h2 {
-    font-size: 1.2rem;
-  }
-
-  .main img {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  /* App box Css Style */
-  .box {
     height: calc(100vh - 10rem)
-  }
-
-  /* Main Css Style */
-  .main h2 {
-    font-size: 1.1rem;
-  }
-
-  .main img {
-    width: 90px;
-    height: 90px;
-  }
-
-  /* Button Css Style */
-  .buttonList button{
-    width: 70px;
-    height: 70px;
-  }
-
-  .buttonList button img{
-    width: 40px;
-    height: 40px;
-  }
-}
-
-@media only screen and (max-width: 350px) {
-  /* App box Css Style */
-  .box {
-    height: calc(100vh - 12rem)
   }
 
   /* Main Css Style */
@@ -213,15 +161,10 @@ button {
   }
 }
 
-@media only screen and (max-width: 300px) {
-  /* Main Css Style */
-  .main h2 {
-    font-size: 0.9rem;
-  }
-
-  .main img {
-    width: 70px;
-    height: 70px;
+@media only screen and (max-width: 400px) {
+  /* App box Css Style */
+  .box {
+    height: calc(100vh - 12rem)
   }
 
   /* Button Css Style */
@@ -232,5 +175,10 @@ button {
   .buttonList button {
     width: 60px;
     height: 60px;
+  }
+
+  .buttonList button img{
+    width: 40px;
+    height: 40px;
   }
 }

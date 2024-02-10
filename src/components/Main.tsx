@@ -1,7 +1,6 @@
 import React from "react";
-
-// 타입
-import { ItemValue } from "../model/item";
+// Types
+import { ItemValue } from "../types/Item";
 
 interface Props {
   title: string;
@@ -14,7 +13,7 @@ const Main = (props: Props) => {
     <div>
       <h2>{props.title}</h2>
       {props.selectItem ? <img src={props.selectItem.src} alt={props.selectItem.alt} /> : null}
-      {props.result ? <p className={props.result}>{props.result}</p> : null}
+      {props.result ? <h3 className={props.result}>{props.result}</h3> : null}
     </div>
   );
 };

@@ -1,20 +1,17 @@
-import React, { useEffect, useState } from "react";
-
-// 컴포넌트
+import React from "react";
+import { useState,useEffect } from "react";
+// Components
 import Score from "./components/Score";
 import Main from "./components/Main";
 import Button from "./components/Button";
-
-// 스타일
+// Style
 import "./App.css";
-
-// 이미지 소스
+// Image
 import Rock from "../src/image/rock.png"
 import Scissors from "../src/image/scissors.png"
 import Paper from "../src/image/paper.png"
-
-// 타입
-import { Item, ItemValue } from "./model/item";
+// Types
+import { Item, ItemValue } from "./types/Item";
 
 const item: Item = {
   Rock: {
