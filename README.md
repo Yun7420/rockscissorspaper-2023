@@ -42,10 +42,10 @@ JavaScript, TypeScript, React, CSS를 활용하여 만든 가위바위보(RockSc
 
 ## 사용스택
 
-- javaScript, TypeScript, React를 사용하여 사이트를 완성합니다.
+- JavaScript, TypeScript, React를 사용하여 사이트를 완성합니다.
 - CSS를 사용하여 디자인합니다.
 - Git, GitHub을 사용하여 파일을 관리합니다.
-- build를 통해 코드와 파일, 이미지, css파일등을 패키징 합니다.
+- build를 통해 코드와 파일, 이미지, CSS파일등을 패키징 합니다.
 
 ## 프로젝트 실행과 마무리
 
