@@ -11,7 +11,7 @@ interface Props {
 const Main = (props: Props) => {
   return (
     <div>
-      <h2>{props.title}</h2>
+      <h3>{props.title}</h3>
       {props.selectItem ? <img src={props.selectItem.src} alt={props.selectItem.alt} /> : null}
       {props.result ? <h3 className={props.result}>{props.result}</h3> : null}
     </div>
