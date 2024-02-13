@@ -22,14 +22,14 @@ JavaScript, TypeScript, React, CSS를 활용하여 만든 가위바위보(RockSc
 - 변수의 타입, 객체의 타입, 함수 타입을 정해주고 문법 오류 수정
 - 리액트에서 제공하는 useState Hook의 초기값을 정하고 타입 추론 후 제네릭 문법을 통해 추가로 들어갈 타입과 초기타입을 반영
 - 로컬스토리지 string | null 타입 오류는 string타입만 가져올 수 있도록 타입 단언 문법을 사용하여 JSON.parse(localStorage.getItem("score") as string) 값으로 설정
-- 각 컴포넌트에 props타입을 interface문법으로 정해주고 타입 설정 (setState타입, 유니온타입 등...)
+- 각 컴포넌트에 Props타입을 Interface문법으로 정해주고 타입 설정 (setState타입, 유니온타입 등...)
 
 4. 리액트 활용
 
-- 디자인한 내용을 component로 구성함으로써 component의 관리, 재사용성에 대해서 생각하기
+- 디자인한 내용을 Component로 구성함으로써 Component의 관리, 재사용성에 대해서 생각하기
 - 리액트에서 제공하는 useState Hook들의 값이 비슷할 경우 객체로 생성하여 코드를 간략화
 - useState의 setState를 통해서 state에 아이템, 승리여부, 점수값 전달 및 할당
-- props를 통해서 state에 값들을 전달하여 아이템, 승리여부, 점수값을 랜더링
+- Props를 통해서 State에 값들을 전달하여 아이템, 승리여부, 점수값을 랜더링
 - 삼항 연산자를 활용하여 로컬스토리지에 값이 없을 경우 점수가 0인 객체를 반영하고 있을 경우 로컬스토리지에 저장된 점수 값을 반영
 
 5. 스타일 활용
@@ -60,11 +60,11 @@ JavaScript, TypeScript, React, CSS를 활용하여 만든 가위바위보(RockSc
    https://velog.io/@nsunny0908/TIL-46-Typescript-image-import
 2. 타입스크립트 로컬스토리지 string | null 오류 </br>
    https://stackoverflow.com/questions/54715260/typescript-json-parse-error-type-null-is-not-assignable-to-type-string
-3. 타입스크립트 props 타입 좁히기1 </br>
+3. 타입스크립트 Props 타입 좁히기1 </br>
    https://ahnheejong.gitbook.io/ts-for-jsdev/06-type-system-deepdive/type-narrowing
-4. 타입스크립트 props 타입 좁히기2 </br>
+4. 타입스크립트 Props 타입 좁히기2 </br>
    https://www.yongdam.sh/blog/effective-typescript-narrowing
-5. 타입스크립트 props setState 타입 정의 </br>
+5. 타입스크립트 Props setState 타입 정의 </br>
    https://til.b41.kr/posts/TIL-react-setState-type-220715/
 6. public 혹은 src 리액트 이미지파일은 어디서 관리하는게 좋을까? </br>
    https://velog.io/@rimo09/React-Create-react-app-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EA%B2%BD%EB%A1%9C%EB%A5%BC-%EC%84%A4%EC%A0%95%ED%95%98%EB%8A%94-4%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95
@@ -164,7 +164,7 @@ JavaScript, TypeScript, React, CSS를 활용하여 만든 가위바위보(RockSc
   );
 ```
 
-4. props타입 설정과 null 타입 좁히기
+4. Props타입 설정과 null 타입 좁히기
 
 ```
   interface Props {
@@ -184,7 +184,7 @@ JavaScript, TypeScript, React, CSS를 활용하여 만든 가위바위보(RockSc
   };
 ```
 
-5. props setState 타입 설정
+5. Props setState 타입 설정
 
 ```
   interface Props {
@@ -206,7 +206,7 @@ JavaScript, TypeScript, React, CSS를 활용하여 만든 가위바위보(RockSc
   import Paper from "../src/image/paper.png"
 ```
 
-2. useState의 비슷한 state값 객체화
+2. useState의 비슷한 State값 객체화
 
 ```
   // 아이템 선택
@@ -223,6 +223,6 @@ JavaScript, TypeScript, React, CSS를 활용하여 만든 가위바위보(RockSc
 
 가위바위보 게임은 저의 두번쨰 프로젝트입니다.
 타입스크립트를 처음으로 사용하기 위해 한입타입스크립트 강의를 3주동안 들었고 이론을 바탕으로 리액트에 적용해보니 상당히 오래걸리고 어려웠습니다.
-타입스크립트의 이미지 폴더 경로 문제, State Hook의 제네릭 타입, 로컬스토리지 string | null 타입 오류, props타입의 null타입 좁히기, props타입의 setState타입 설정,
+타입스크립트의 이미지 폴더 경로 문제, State Hook의 제네릭 타입, 로컬스토리지 string | null 타입 오류, Props타입의 null타입 좁히기, Props타입의 setState타입 설정,
 리액트의 useState의 객체화 등 알아보고 적용하는데 많은 시간이 걸렸지만 그만큼 얻어가는것도 많은 좋은 시간이였습니다.
 현재는 타입에 적응하고 싶어 모든 곳에 타입을 정하는 식이지만 후에 타입 추론을 잘 활용하여 필요한 곳에만 넣을 수 있는 실력이 되면 좋겠습니다.
