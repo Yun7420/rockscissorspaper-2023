@@ -28,7 +28,7 @@ JavaScript, TypeScript, React, CSS를 활용하여 만든 가위바위보(RockSc
 
 - 디자인한 내용을 Component로 구성함으로써 Component의 관리, 재사용성에 대해서 생각하기
 - 리액트에서 제공하는 useState Hook들의 값이 비슷할 경우 객체로 생성하여 코드를 간략화
-- useState의 setState를 통해서 state에 아이템, 승리여부, 점수값 전달 및 할당
+- useState의 setState를 통해서 State에 아이템, 승리여부, 점수값 전달 및 할당
 - Props를 통해서 State에 값들을 전달하여 아이템, 승리여부, 점수값을 랜더링
 - 삼항 연산자를 활용하여 로컬스토리지에 값이 없을 경우 점수가 0인 객체를 반영하고 있을 경우 로컬스토리지에 저장된 점수 값을 반영
 
