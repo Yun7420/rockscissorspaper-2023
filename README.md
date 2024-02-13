@@ -1,6 +1,6 @@
 # 가위바위보 게임 만들기 🧐
 
-Javascript, Typescript, React, Css를 활용하여 만든 가위바위보(RockScissorsPaper)게임 프로젝트입니다.
+JavaScript, TypeScript, React, CSS를 활용하여 만든 가위바위보(RockScissorsPaper)게임 프로젝트입니다.
 사용자는 가위, 바위, 보 아이템들중 하나의 아이템을 선택하고, 컴퓨터는 아이템들중 하나를 랜덤하게 골라 대결을 진행합니다.
 결과는 Win, Lose, Tie로 나뉘며, 결과가 Win이라면 점수를 1점 획득할 수 있으며 언제든지 Reset버튼을 통해서 점수를 초기화 할 수 있습니다.
 
@@ -34,7 +34,7 @@ Javascript, Typescript, React, Css를 활용하여 만든 가위바위보(RockSc
 
 5. 스타일 활용
 
-- Css작업을 통해 디자인하고 반응형 작업을 수행
+- CSS작업을 통해 디자인하고 반응형 작업을 수행
 
 ## 완성작 미리보기
 
@@ -42,14 +42,14 @@ Javascript, Typescript, React, Css를 활용하여 만든 가위바위보(RockSc
 
 ## 사용스택
 
-- javascript, Typescript, react를 사용하여 사이트를 완성합니다.
-- css를 사용하여 디자인합니다.
-- git, github을 사용하여 파일을 관리합니다.
+- javaScript, TypeScript, React를 사용하여 사이트를 완성합니다.
+- CSS를 사용하여 디자인합니다.
+- Git, GitHub을 사용하여 파일을 관리합니다.
 - build를 통해 코드와 파일, 이미지, css파일등을 패키징 합니다.
 
 ## 프로젝트 실행과 마무리
 
-- react typescript를 설치합니다. `npx create-react-app my-app --template typescript`
+- React TypeScript를 설치합니다. `npx create-react-app my-app --template typescript`
 - 배포 환경에서 사용할 파일을 생성합니다. `npm run build`
 - static 파일 서빙 프로그램 생성합니다. `npm install -g(현재 컴퓨터 모든 경로 사용가능) serve`
 - build폴더 기반으로 웹 애플리케이션 서빙합니다. `serve -s build`
@@ -75,7 +75,7 @@ Javascript, Typescript, React, Css를 활용하여 만든 가위바위보(RockSc
 
 ## 프로젝트를 통해 배운 내용
 
-### Javascript
+### JavaScript
 
 1. 컴퓨터 아이템을 랜덤하게 선택
 
@@ -115,7 +115,7 @@ Javascript, Typescript, React, Css를 활용하여 만든 가위바위보(RockSc
   };
 ```
 
-### Typescript
+### TypeScript
 
 1. 이미지 소스 확장자 문법 오류
 
